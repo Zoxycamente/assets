@@ -9,15 +9,12 @@ function update() {
 	healthBarBG.visible = true;
 }
 
-function onNoteHit(e) {
-    if (!e.player) e.strumGlowCancelled = true;
-}
+function onNoteHit(e) if (!e.player) e.strumGlowCancelled = true;
 
 function beatHit(curBeat:Int) {
 	if (curSong == "sussy-legacy") {
         switch(curBeat) {
-			            case 1:
-						    FlxTween.tween(FlxG.camera, {zoom: 1.1}, 5.2, {ease: FlxEase.cubeOut});
+			            case 1: FlxTween.tween(FlxG.camera, {zoom: 1.1}, 5.2, {ease: FlxEase.cubeOut});
 					    case 16:
 							camHUD.visible = true;
 						    defaultCamZoom = 0.8;
@@ -42,7 +39,5 @@ function beatHit(curBeat:Int) {
 							FlxTween.tween(escuridao, {alpha: 1}, 0.1, {ease: FlxEase.cubeOut});
 							FlxTween.tween(boyfriend, {alpha: 0}, 0.1, {ease: FlxEase.cubeOut});
 							FlxTween.tween(camHUD, {alpha: 0}, 0.1, {ease: FlxEase.cubeOut});
-		                }
-					}
-				if(curBeat >= 64 && curBeat < 128 || curBeat >= 192 && curBeat < 256) camGame.zoom += 0.015;
-			}
+		    }
+}	if(curBeat >= 64 && curBeat < 128 || curBeat >= 192 && curBeat < 256) camGame.zoom += 0.015;     }

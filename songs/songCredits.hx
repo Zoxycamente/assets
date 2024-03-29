@@ -2,7 +2,6 @@ import flixel.util.FlxColor;
 import flixel.text.FlxTextBorderStyle;
 
 var color = 0xFF754B4B;
-
 var camOther:FlxCamera;
 
 function postCreate() {
