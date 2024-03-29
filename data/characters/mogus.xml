@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="210" icon="mogus" y="200" isGF="false" color="#F6FF44" isPlayer="false" holdTime="6.1" sprite="suasbousus">
+	<anim x="111" loop="false" y="-7" fps="24" anim="idle" name="idle"/>
+	<anim x="111" loop="false" y="146" fps="24" anim="up" name="singUP"/>
+	<anim x="126" loop="false" y="-76" fps="24" anim="left" name="singLEFT"/>
+	<anim x="18" loop="false" y="28" fps="24" anim="right" name="singRIGHT"/>
+	<anim x="94" loop="false" y="-99" fps="24" anim="down" name="singDOWN"/>
+</character>

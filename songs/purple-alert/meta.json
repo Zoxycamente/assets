@@ -1,0 +1,17 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": false,
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"bpm": 175,
+	"difficulties": [
+		"normal"
+	],
+	"needsVoices": true,
+	"parsedColor": -6139649,
+	"displayName": "Purple Alert",
+	"icon": "renkwuz",
+	"name": "purple-alert",
+	"color": "#cfa6ff",
+	"customValues": {}
+}

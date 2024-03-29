@@ -1,0 +1,13 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/dead-memories/" zoom="0.8">
+	<gf/>
+	<sprite x="-1772.5" y="-573" sprite="fundo" name="fundo"/>
+	<sprite x="-671.25" y="171.5" sprite="zumbissz" name="zumbid"/>
+	<dad/>
+	<bf/>
+	<combo x="500.25" y="468"/>
+	<sprite x="34.5" y="-298.5" sprite="luz" name="luz"/>
+	<sprite x="80.5" y="585.5" alpha= "0.8" sprite="coisa da frente" name="frente"/>
+	<sprite x="-621.25" y="-212" sprite="somsonador" name="somsonador1"/>
+	<sprite x="1369.75" y="-277" sprite="somsonador" name="somsonador2"/>
+</stage>

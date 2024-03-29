@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="buttons_assets.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Credits normal0000" x="0" y="0" width="376" height="95"/>
+	<SubTexture name="Credits press0000" x="0" y="95" width="376" height="95"/>
+	<SubTexture name="Gallery normal0000" x="0" y="190" width="376" height="95"/>
+	<SubTexture name="Gallery press0000" x="0" y="285" width="376" height="95"/>
+	<SubTexture name="Options normal0000" x="0" y="380" width="376" height="95"/>
+	<SubTexture name="Options press0000" x="0" y="475" width="376" height="95"/>
+	<SubTexture name="Play normal0000" x="0" y="570" width="376" height="95"/>
+	<SubTexture name="Play press0000" x="0" y="665" width="376" height="95"/>
+</TextureAtlas>

@@ -1,0 +1,17 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": true,
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"bpm": 160,
+	"difficulties": [
+		"normal"
+	],
+	"needsVoices": true,
+	"parsedColor": -8876572,
+	"displayName": "Void Mind",
+	"icon": "hankus_memories",
+	"name": "void-mind",
+	"color": "#788DE4",
+	"customValues": {}
+}

@@ -1,0 +1,29 @@
+{
+    "params": [
+        {
+            "name": "BF Right Scroll",
+            "type": "Bool",
+            "defaultValue": false
+        },
+        {
+            "name": "BF Down Scroll",
+            "type": "Bool",
+            "defaultValue": false
+        },
+        {
+            "name": "BF Up Scroll",
+            "type": "Bool",
+            "defaltValue": false
+        },
+        {
+            "name": "BF Left Scroll",
+            "type": "Bool",
+            "defaltValue": false
+        },
+        {
+            "name": "BF Default Scroll",
+            "type": "Bool",
+            "defaltValue": false
+        }        
+    ]
+}

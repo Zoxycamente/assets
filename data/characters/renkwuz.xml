@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="-50" icon="renkwuz" camx="-180" y="200" isGF="false" scale="1.1" camy="0" color="#240037" isPlayer="false" holdTime="6.1" sprite="renk wus">
+	<anim x="316" loop="true" y="127" fps="24" anim="H idle" name="idle"/>
+	<anim x="243" loop="false" y="163" fps="24" anim="H up" name="singUP"/>
+	<anim x="368" loop="false" y="94" fps="24" anim="H ieft" name="singLEFT"/>
+	<anim x="65" loop="false" y="52" fps="24" anim="H right" name="singRIGHT"/>
+	<anim x="129" loop="false" y="45" fps="24" anim="H down" name="singDOWN"/>
+</character>

@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/purple-alert/" zoom="0.6">
+	<gf/>
+	<sprite x="-3391.5" name="bg" sprite="fundo" y="-438.5"/>
+	<sprite x="-560.5" name="a" sprite="a" y="-154"/>
+	<dad/>
+	<bf/>
+	<combo x="1400" y="455"/>
+</stage>

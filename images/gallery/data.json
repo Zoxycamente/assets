@@ -1,0 +1,113 @@
+{
+  "bgSettings": {
+    "image": "charter",
+    "antialiasing": false,
+    "color": "0x9800FF",
+    "velocity": {
+      "x": -0.5,
+      "y": 0.25
+    },
+    "scale": {
+      "width": 1,
+      "height": 1
+    }
+  },
+  "textSettings": {
+	"titleFont": "vcr.ttf",
+	"titleColor": "0xFFFFFF",
+	"titleBorderColor": "0x000000",
+	"titleSize": 30,
+	"titleBorderSize": 3,
+	"descFont": "vcr.ttf",
+	"descColor": "0xFFFFFF",
+	"descBorderColor": "0x000000",
+	"descSize": 20,
+	"descBorderSize": 2
+  },
+  "images": [
+    {
+      "filename": "oghankus",
+      "title": "THE TRUE AND HONEST HANKUS.",
+      "description": "Original hankus.",
+      "antialiasing": true,
+      "resize": true
+    },
+    {
+      "filename": "olderHankus",
+      "title": "older Hankus idle",
+      "description": "Fist thing made for this remake.",
+      "antialiasing": true,
+      "resize": true
+    },
+    {
+      "filename": "scrappedHR",
+      "title": "scrapped Hankus remake sprite",
+      "description": "Scrapped due flash crashes and fla being lost.",
+      "antialiasing": true,
+      "resize": true
+    },
+    {
+      "filename": "sketchHR",
+      "title": "newer Hankus idle sketch",
+      "description": "Nobody like it in the time...",
+      "antialiasing": true,
+      "resize": true
+    },
+    {
+      "filename": "family",
+      "title": "All Hankus designs",
+      "description": "Big family.",
+      "antialiasing": true,
+      "resize": true
+    },
+    {
+      "filename": "legacyScrapped",
+      "title": "two hankus legacy's scrapped sprites",
+      "description": "Both scrapped due fla being lost.",
+      "antialiasing": true,
+      "resize": true
+    },
+    {
+      "filename": "ogmenu",
+      "title": "fist menu concept",
+      "description": "Thanks God that make me scrap this.",
+      "antialiasing": true,
+      "resize": true
+    },
+    {
+      "filename": "menuConcept",
+      "title": "secound menu concept",
+      "description": "I like that concept, despite being a little bit generic.",
+      "antialiasing": true,
+      "resize": true
+    },
+    {
+      "filename": "menuCast",
+      "title": "unfinished menu button",
+      "description": "I like that original cast. You guess then they are friends?",
+      "antialiasing": true,
+      "resize": true
+    },
+    {
+      "filename": "iconsOld",
+      "title": "Old icons",
+      "description": "A amount of old/scrapped icons.",
+      "antialiasing": true,
+      "resize": true
+    },
+    {
+      "filename": "cutsceneH",
+      "title": "cutscene Hankus' sprite",
+      "description": "Made in 2021.",
+      "antialiasing": true,
+      "resize": true
+    },
+    {
+      "filename": "oldmenuBG",
+      "title": "Oldest menuBG",
+      "description": "Made in 2021 on paint3D.",
+      "antialiasing": true,
+      "resize": true      
+    }
+  ]
+}

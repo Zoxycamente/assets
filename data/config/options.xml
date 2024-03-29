@@ -1,0 +1,7 @@
+<!DOCTYPE codename-mod-options>
+<menu name="Hankus" desc="Hankus cool options">
+	<checkbox id="camMove" name="Camera Movement" desc="If checked, the camera will move with the notes' direction." />
+	<checkbox id="iconBop" name="Icon Bop On Hit" desc="If checked, the icons gonna bop on a note hit." />
+	<checkbox id="middlescroll" name="Middlescroll" desc="If checked, centers the player's strums to the middle." />
+	<checkbox id="timebar" name="Timebar" desc="If checked, there will be a timebar based on how much there is left in the song." />
+</menu>

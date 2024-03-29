@@ -1,0 +1,17 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": false,
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"bpm": 100,
+	"difficulties": [
+		"hard"
+	],
+	"needsVoices": true,
+	"parsedColor": -1,
+	"displayName": "HankSus Poggers",
+	"icon": "mogus",
+	"name": "hanksus",
+	"color": "#FFFFFF",
+	"customValues": {}
+}

@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="600" icon="bfwuz" camx="-600" y="200" isGF="false" scale="1.1" camy="20" color="#9883FF" flipX="true" isPlayer="true" gameOverChar="bfwuz-dead" holdTime="6.1" sprite="bf/bfwus">
+	<anim x="466" loop="true" y="27" fps="24" anim="B idle" name="idle"/>
+	<anim x="428" loop="false" y="118" fps="24" anim="B up" name="singUP"/>
+	<anim x="440" loop="false" y="27" fps="24" anim="B left" name="singLEFT"/>
+	<anim x="410" loop="false" y="34" fps="24" anim="B right" name="singRIGHT"/>
+	<anim x="496" loop="false" y="20" fps="24" anim="B down" name="singDOWN"/>
+</character>
