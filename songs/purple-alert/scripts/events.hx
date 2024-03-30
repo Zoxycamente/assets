@@ -60,5 +60,5 @@ function beatHit(curBeat:Int) {
 					}
 				if ((curBeat >= 64 && curBeat < 128) || (curBeat >= 192 && curBeat < 256) || (curBeat >= 288 && curBeat < 352))
 					health = FlxG.random.float(0.06, 2);
-				    camGame.zoom += 0.045;
+				for (cameras in [camGame, camHUD]) cameras.zoom += 0.045;
 			}

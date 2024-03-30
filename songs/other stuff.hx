@@ -1,10 +1,5 @@
 public var notSL:Bool  = true;
 
-function beatHit() {
-    if (camZoomingInterval < 1) camZoomingInterval = 1;
-        if(Options.camZoomOnBeat && camZooming && FlxG.camera.zoom < maxCamZoom && curBeat % camZoomingInterval == 0) camHUD.zoom = 0;
-}
-
 function postUpdate(elapsed) {
     if (notSL) {
         iconP1.x = 886;
