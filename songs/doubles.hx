@@ -27,6 +27,8 @@ function onNoteHit(event:NoteHitEvent) {
 			if (character.visible) doGhostAnim(character, target.colors[event.characters.indexOf(character)]).playAnim(character.getAnimName(), true);
 }
 function doGhostAnim(char:Character, color:FlxColor) {
+	camGame.zoom -= 0.015;
+	
 	var trail:Character = new Character(char.x, char.y, char.curCharacter, char.isPlayer);
 	trail.color = 0xFFFF0000;
 	if (char.isPlayer) trail.color = 0xFF00FFFF;

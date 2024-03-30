@@ -1,1 +1,0 @@
-function onSongEnd() FlxG.switchState(new ModState('SussyMainMenuState'));
