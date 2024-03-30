@@ -105,7 +105,7 @@ function create() {
             Composer = "Composer\nfreshpizza";
             songOp = "RenkWuz Vs. BfWuz";
         case "void-mind":
-            Composer = "Composer\nespla";
+            Composer = "Composer\nmica";
             songOp = "Incident Hankus Vs. Incident Bf";
         case "sussy-legacy":
             color = 0xFF4E4B75;

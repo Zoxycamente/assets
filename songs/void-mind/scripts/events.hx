@@ -1,6 +1,6 @@
 import openfl.geom.ColorTransform;
 
-function update() window.title = "Friday Night Funkin': Vs. Hankus | Void-Mind | You won't know my past, kid.";
+function update() window.title = "Friday Night Funkin': Vs. Hankus | Void Mind | My memories are death";
 
 function beatHit(curBeat:Int) {
 switch (curBeat) {
