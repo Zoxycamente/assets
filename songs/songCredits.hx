@@ -20,21 +20,21 @@ function postCreate() {
     BorderLeft.cameras = [camOther];
     add(BorderLeft);
 
-    songName = new FlxText(0, 600, FlxG.width, PlayState.SONG.meta.displayName);
+    songName = new FlxText(0, 30, FlxG.width, PlayState.SONG.meta.displayName);
     songName.setFormat(Paths.font("impact.ttf"), 50, 0xFFFF0000, "center", FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
     songName.borderSize = 2.3;
     songName.alpha = 0;
     songName.cameras = [camOther];
     add(songName);
 
-    songOp = new FlxText(0, 540, FlxG.width, songOp + "\n_____________");
+    songOp = new FlxText(0, 100, FlxG.width, songOp + "\n_____________");
     songOp.setFormat(Paths.font("impact.ttf"), 25, 0xFFFF0000, "center", FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
     songOp.borderSize = 2.3;
     songOp.alpha = 0;
     songOp.cameras = [camOther];
     add(songOp);
 
-    Credits = new FlxText(0, 420, FlxG.width, "CREDITS\n_____________");
+    Credits = new FlxText(0, 190, FlxG.width, "CREDITS\n_____________");
     Credits.setFormat(Paths.font("impact.ttf"), 40, 0xFFFFE600, "center", FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
     Credits.borderSize = 2.3;
     Credits.alpha = 0;
@@ -48,21 +48,21 @@ function postCreate() {
     Coder.cameras = [camOther];
     add(Coder);
 
-    Artist = new FlxText(0, 200, FlxG.width, "Artist\npeanut cut\n             ");
+    Artist = new FlxText(0, 400, FlxG.width, "Artist\npeanut cut\n             ");
     Artist.setFormat(Paths.font("impact.ttf"), 30, 0xFFFFFFFF, "center", FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
     Artist.borderSize = 2.1;
     Artist.alpha = 0;
     Artist.cameras = [camOther];
     add(Artist);
 
-    Composer = new FlxText(0, 100, FlxG.width, Composer + "\n             ");
+    Composer = new FlxText(0, 500, FlxG.width, Composer + "\n             ");
     Composer.setFormat(Paths.font("impact.ttf"), 30, 0xFFFFFFFF, "center", FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
     Composer.borderSize = 2.1;
     Composer.alpha = 0;
     Composer.cameras = [camOther];
     add(Composer);
 
-    Charter = new FlxText(0, 30, FlxG.width, "Charter\npeanut cut");
+    Charter = new FlxText(0, 600, FlxG.width, "Charter\npeanut cut");
     Charter.setFormat(Paths.font("impact.ttf"), 30, 0xFFFFFFFF, "center", FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
     Charter.borderSize = 2.1;
     Charter.alpha = 0;
@@ -111,6 +111,10 @@ function create() {
             color = 0xFF4E4B75;
             Composer = "Composer\ncara heroico";
             songOp = "Legacy Hankus Vs. Alt.Bf";
+        case "hanksus":
+            color = 0xFFCCC934;
+            Composer = "Composer\nmica";
+            songOp = "Mogus Vs. Bf";
         default:
             Composer = "Composer\n?????";
             songOp = "??? Vs. Bf";
