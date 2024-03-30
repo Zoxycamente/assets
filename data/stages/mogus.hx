@@ -1,7 +1,4 @@
-function update() {
-    barSongLength = 2000004;
-    window.title = "Friday Night Funkin': Vs. Hankus | HankSus Poggers | THIS SONG'S GOES HARD";
-}
+function update() window.title = "Friday Night Funkin': Vs. Hankus | HankSus Poggers | THIS SONG'S GOES HARD";
 
 function create() {
     dad.y += 55;
@@ -12,5 +9,3 @@ function create() {
 	insert(members.indexOf(dad), whiteBG);
     add(whiteBG);
 }
-
-function onSongEnd() FlxG.switchState(new ModState('SussyMainMenuState'));
