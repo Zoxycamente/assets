@@ -5,10 +5,4 @@ function beatHit(curBeat:Int)
 		{
 			camHUD.zoom += 0;
 		}
-
-		iconP1.scale.set(1, 1);
-		iconP2.scale.set(1, 1);
-
-		iconP1.updateHitbox();
-		iconP2.updateHitbox();
 	}
