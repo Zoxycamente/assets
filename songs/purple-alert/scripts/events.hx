@@ -8,13 +8,6 @@ function onSongStart() {
 	defaultCamZoom += 0.3;
 }
 
-function onPlayerMiss(curBeat:Int) {
-    FlxTween.color(boyfriend, 2, FlxColor.PURPLE, FlxColor.WHITE, {ease: FlxEase.quintOut, onComplete: function(twn:FlxTween){hurtTween = null;}});
-	if (curBeat == 288) {
-		FlxTween.color(boyfriend, 2, FlxColor.RED, FlxColor.PURPLE, {ease: FlxEase.quintOut, onComplete: function(twn:FlxTween){hurtTween = null;}});
-	}
-}
-
 function beatHit(curBeat:Int) {
 	switch (curBeat)
 					{
@@ -57,6 +50,7 @@ function beatHit(curBeat:Int) {
 						for (stage in [stage.getSprite("bg"),stage.getSprite("a")]) stage.color = FlxColor.WHITE; 
 						defaultCamZoom = 0.8;
 						camGame.flash(FlxColor.WHITE, 1);
+					case 355: for (cameras in [camGame, camHUD]) FlxTween.tween(cameras, {alpha: 0}, 1, {ease: FlxEase.circOut});
 					}
 				if ((curBeat >= 64 && curBeat < 128) || (curBeat >= 192 && curBeat < 256) || (curBeat >= 288 && curBeat < 352))
 					health = FlxG.random.float(0.06, 2);
