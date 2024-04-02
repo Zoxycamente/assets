@@ -26,13 +26,8 @@ function onNoteHit(event:NoteHitEvent) {
 		for (character in event.characters)
 			if (character.visible) doGhostAnim(character, target.colors[event.characters.indexOf(character)]).playAnim(character.getAnimName(), true);
 }
-function doGhostAnim(char:Character, color:FlxColor) {
-	camGame.zoom -= 0.015;
-	camHUD.zoom -= 0.03;
-	
+function doGhostAnim(char:Character, color:FlxColor) {	
 	var trail:Character = new Character(char.x, char.y, char.curCharacter, char.isPlayer);
-	trail.color = 0xFFFF0000;
-	if (char.isPlayer) trail.color = 0xFF00FFFF;
 	insert(members.indexOf(char), trail);
 	FlxTween.tween(trail, {alpha: 0}, .75).onComplete = function() {
 		trail.kill();

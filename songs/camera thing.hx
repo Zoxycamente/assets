@@ -1,28 +1,13 @@
-if (!FlxG.save.data.camMove) disableScript();
+if (!FlxG.save.data.camMove && curSong == "sussy-legacy") disableScript();
 
-var cammove = 24; // how much the camera will move
-var angleMoveSpeed = 0.09; // the speed of the camera rotating
-var angleVar = 1; // how much it will rotate
+public var cameraMovementStrength = 20;
 
-function postUpdate() {
-    if (notSL) {
-    switch(strumLines.members[curCameraTarget].characters[0].getAnimName()) {
-        case "singLEFT": 
-            camFollow.x -= cammove;
-            camGame.angle = (lerp(camGame.angle, -angleVar, angleMoveSpeed));
-        case "singDOWN": 
-            camFollow.y += cammove;
-            camGame.angle = (lerp(camGame.angle, 0, angleMoveSpeed));
-        case "singUP": 
-            camFollow.y -= cammove;
-            camGame.angle = (lerp(camGame.angle, 0, angleMoveSpeed));
-        case "singRIGHT": 
-            camFollow.x += cammove;
-            camGame.angle = (lerp(camGame.angle, angleVar, angleMoveSpeed));
-        case "idle", "hey":
-            camGame.angle = (lerp(camGame.angle, 0, angleMoveSpeed));
-            } if (dad.curCharacter == "legacy") { 
-                notSL = false; 
-        }
+function postUpdate(elapsed:Float){
+    var anim = strumLines.members[curCameraTarget].characters[0].getAnimName();
+    switch(anim){
+        case "singLEFT"|"singLEFT-alt": camFollow.x -= cameraMovementStrength;
+        case "singDOWN"|"singDOWN-alt": camFollow.y += cameraMovementStrength;
+        case "singUP"|"singUP-alt": camFollow.y -= cameraMovementStrength;
+        case "singRIGHT"|"singRIGHT-alt": camFollow.x += cameraMovementStrength;
     }
 }

@@ -35,6 +35,6 @@ function onDadHit(event){
             iconTween = null;
         }
     });
-} if (curSong == "sussy-legacy") notSL = false; 
+} if (curSong == "sussy-legacy" || curSong == "consternation") notSL = false; 
 
 }

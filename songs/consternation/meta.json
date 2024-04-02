@@ -5,15 +5,12 @@
 	"stepsPerBeat": 4,
 	"bpm": 160,
 	"difficulties": [
-		"normal"
+		"hard"
 	],
-	"needsVoices": false,
-	"parsedColor": -11509647,
+	"needsVoices": true,
+	"parsedColor": -2159096,
 	"displayName": "Consternation",
 	"icon": "hankus",
 	"name": "consternation",
-	"color": "#506071",
-	"customValues": {
-		"Composer": "KittyWuz"
-	}
+	"color": "#DF0E08"
 }

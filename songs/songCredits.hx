@@ -1,6 +1,7 @@
 import flixel.util.FlxColor;
 import flixel.text.FlxTextBorderStyle;
 
+public var hankus:FlxText;
 var color = 0xFF754B4B;
 var camOther:FlxCamera;
 
@@ -33,6 +34,12 @@ function postCreate() {
     songOp.alpha = 0;
     songOp.cameras = [camOther];
     add(songOp);
+    hankus = new FlxText(-60, 100, FlxG.width, "Alt.Hankus");
+    hankus.setFormat(Paths.font("impact.ttf"), 25, 0xFFFF0000, "center", FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+    hankus.borderSize = 2.3;
+    hankus.alpha = 0;
+    hankus.cameras = [camOther];
+    if (curSong == "sabotage-error") add(hankus);
 
     Credits = new FlxText(0, 190, FlxG.width, "CREDITS\n_____________");
     Credits.setFormat(Paths.font("impact.ttf"), 40, 0xFFFFE600, "center", FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -71,14 +78,14 @@ function postCreate() {
 }
 
 function songCredits() {
-    for (a in [songName, songOp, Credits, Coder, Artist, Composer, Charter]) {
+    for (a in [songName, songOp, Credits, Coder, Artist, Composer, Charter, hankus]) {
         FlxTween.tween(a, {alpha: 1}, 1, {ease: FlxEase.circInOut});
         FlxTween.tween(Main, {alpha: 0.6}, 1, {ease: FlxEase.circInOut});
         for (h in [BorderRight, BorderLeft]) FlxTween.tween(h, {alpha: 0.8}, 0.8, {ease: FlxEase.circInOut});
     }
 
     new FlxTimer().start(3, function(timer:FlxTimer) {
-        for (i in [songName, songOp, Credits, Coder, Artist, Composer, Charter, Main, BorderRight, BorderLeft]) {
+        for (i in [songName, songOp, Credits, Coder, Artist, Composer, Charter, Main, BorderRight, BorderLeft, hankus]) {
             FlxTween.tween(i, {alpha: 0}, 1.5, {ease: FlxEase.circInOut, onComplete: function(delAssets:FlxTween) {
                 remove(i);
             }});
@@ -100,6 +107,9 @@ function create() {
     FlxG.cameras.add(camOther, false);
 
     switch(curSong) {
+        case "consternation":
+            Composer = "Composer\ncuddlykitten";
+            songOp = "Hankus Vs. Bgrunt";
         case "purple-alert":
             color = 0xFF3B2844;
             Composer = "Composer\nfreshpizza";
@@ -107,9 +117,12 @@ function create() {
         case "void-mind":
             Composer = "Composer\nmica";
             songOp = "Incident Hankus Vs. Incident Bf";
+        case "sabotage-error":
+            Composer = "Composer\ndeko";
+            songOp = "                   Vs. Bfus";
         case "sussy-legacy":
             color = 0xFF4E4B75;
-            Composer = "Composer\ncara heroico";
+            Composer = "Composer\nCH";
             songOp = "Legacy Hankus Vs. Alt.Bf";
         case "hanksus":
             color = 0xFFCCC934;
