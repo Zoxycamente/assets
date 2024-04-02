@@ -1,0 +1,27 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/consternation/" zoom="0.9">
+	<gf x="482" y="200"/>
+	<sprite x="-688" y="-394" sprite="fundo" name="BG"/>
+	<sprite x="145.5" y="155.5" sprite="bomboxsozxobo" type="none" name="box">
+		
+		
+		<anim loop="false" x="0" anim="idle" fps="24" y="0" type="beat" name="idle"/>
+		
+	
+	</sprite>
+	<dad x="86" y="68.25"/>
+	<bf x="746.5" y="40"/>
+	<sprite x="-177.5" y="704" sprite="zumbi_1" name="zumbi_1"/>
+	<sprite x="931.25" y="875.5" sprite="zumbi_2" name="zumbi_2"/>
+	<sprite x="485.75" y="870" sprite="zumbi_4" name="zumbi_4"/>
+	<sprite x="1208.75" y="794" sprite="zumbi_3" name="zumbi_3"/>
+	<combo x="1157" y="271"/>
+	<sprite x="383.5" y="-576" sprite="lampada" name="lampada">
+		
+		
+		<anim loop="false" x="0" anim="idle" fps="24" y="0" type="loop" name="idle"/>
+		
+	
+	</sprite>
+	<sprite x="-711.5" name="filtro" sprite="filtro" y="-472.5"/>
+</stage>

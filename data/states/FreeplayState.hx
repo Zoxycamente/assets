@@ -39,6 +39,7 @@ function postCreate() {
 	posters.animation.addByIndices('purple', 'poster', [0], null, 24, true);
     posters.animation.addByIndices('void', 'poster', [2], null, 24, true);
     posters.animation.addByIndices('legacy', 'poster', [1], null, 24, true);
+	posters.animation.play('void');
     posters.antialiasing = true;
 	add(posters);
 
@@ -64,6 +65,10 @@ function postCreate() {
 
 function postUpdate(){
     switch(songs[curSelected].name) {
+		case "consternation": songName.text = "Consternation";
+		case "apotheosis": songName.text = "Apotheosis";
+		case "sabotage-error": songName.text = "Sabotage Error";
+		case "poligonal-suspicion": songName.text = "Poligonal Suspicion";
 		case "purple-alert": 
 			FlxTween.tween(bg1, {alpha: 1}, 0.5, {ease: FlxEase.Linear});
 			FlxTween.tween(bg2, {alpha: 0}, 0.5, {ease: FlxEase.Linear});

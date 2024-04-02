@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lampada.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="lampada0000" x="0" y="0" width="559" height="952"/>
+	<SubTexture name="lampada0001" x="0" y="0" width="559" height="952"/>
+	<SubTexture name="lampada0002" x="559" y="0" width="559" height="952"/>
+	<SubTexture name="lampada0003" x="559" y="0" width="559" height="952"/>
+	<SubTexture name="lampada0004" x="1118" y="0" width="559" height="952"/>
+	<SubTexture name="lampada0005" x="1118" y="0" width="559" height="952"/>
+	<SubTexture name="lampada0006" x="1677" y="0" width="559" height="952"/>
+	<SubTexture name="lampada0007" x="1677" y="0" width="559" height="952"/>
+</TextureAtlas>

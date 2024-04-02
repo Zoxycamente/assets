@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="corruptedv3.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="lose icon0000" x="0" y="0" width="87" height="71" frameX="-10" frameY="0" frameWidth="103" frameHeight="71"/>
+	<SubTexture name="lose icon0001" x="87" y="0" width="87" height="71" frameX="-10" frameY="0" frameWidth="103" frameHeight="71"/>
+	<SubTexture name="lose icon0002" x="174" y="0" width="92" height="71" frameX="-11" frameY="0" frameWidth="103" frameHeight="71"/>
+	<SubTexture name="lose icon0003" x="266" y="0" width="94" height="71" frameX="-9" frameY="0" frameWidth="103" frameHeight="71"/>
+	<SubTexture name="lose icon0004" x="360" y="0" width="99" height="71" frameX="0" frameY="0" frameWidth="103" frameHeight="71"/>
+	<SubTexture name="lose icon0005" x="0" y="71" width="99" height="71" frameX="0" frameY="0" frameWidth="103" frameHeight="71"/>
+	<SubTexture name="lose icon0006" x="99" y="71" width="96" height="71" frameX="-6" frameY="0" frameWidth="103" frameHeight="71"/>
+	<SubTexture name="lose icon0007" x="195" y="71" width="96" height="71" frameX="-6" frameY="0" frameWidth="103" frameHeight="71"/>
+	<SubTexture name="normal icon0000" x="291" y="71" width="104" height="110" frameX="-2" frameY="-4" frameWidth="113" frameHeight="116"/>
+	<SubTexture name="normal icon0001" x="395" y="71" width="104" height="110" frameX="-2" frameY="-4" frameWidth="113" frameHeight="116"/>
+	<SubTexture name="normal icon0002" x="0" y="181" width="112" height="115" frameX="-1" frameY="0" frameWidth="113" frameHeight="116"/>
+	<SubTexture name="normal icon0003" x="112" y="181" width="112" height="115" frameX="-1" frameY="0" frameWidth="113" frameHeight="116"/>
+	<SubTexture name="normal icon0004" x="224" y="181" width="108" height="110" frameX="0" frameY="-6" frameWidth="113" frameHeight="116"/>
+	<SubTexture name="normal icon0005" x="332" y="181" width="108" height="110" frameX="0" frameY="-6" frameWidth="113" frameHeight="116"/>
+	<SubTexture name="normal icon0006" x="0" y="296" width="107" height="109" frameX="-1" frameY="-4" frameWidth="113" frameHeight="116"/>
+	<SubTexture name="normal icon0007" x="107" y="296" width="107" height="109" frameX="-1" frameY="-4" frameWidth="113" frameHeight="116"/>
+</TextureAtlas>

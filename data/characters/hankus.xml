@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="210" icon="hankus" y="180" camy="110" isGF="false" scale="1.1" color="#32363E" isPlayer="false" holdTime="6.1" sprite="hankus">
+	<anim x="91" loop="true" y="-5" fps="24" anim="hankus idle dance" name="idle"/>
+	<anim x="108" loop="false" y="37" fps="24" anim="hankus sing up" name="singUP"/>
+	<anim x="182" loop="false" y="-5" fps="24" anim="hankus sing left" name="singLEFT"/>
+	<anim x="116" loop="false" y="-6" fps="24" anim="hankus sing right" name="singRIGHT"/>
+	<anim x="386" loop="false" y="-48" fps="24" anim="hankus sing down" name="singDOWN"/>
+</character>

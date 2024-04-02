@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="hankus_icon.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="icon idle dance0000" x="0" y="0" width="82" height="81"/>
+	<SubTexture name="icon idle dance0001" x="0" y="0" width="82" height="81"/>
+	<SubTexture name="icon idle dance0002" x="90" y="0" width="82" height="81"/>
+	<SubTexture name="icon idle dance0003" x="90" y="0" width="82" height="81"/>
+	<SubTexture name="icon sing down0000" x="180" y="0" width="70" height="77" frameX="-1" frameY="0" frameWidth="71" frameHeight="77"/>
+	<SubTexture name="icon sing down0001" x="180" y="0" width="70" height="77" frameX="-1" frameY="0" frameWidth="71" frameHeight="77"/>
+	<SubTexture name="icon sing down0002" x="0" y="89" width="69" height="77" frameX="0" frameY="0" frameWidth="71" frameHeight="77"/>
+	<SubTexture name="icon sing down0003" x="0" y="89" width="69" height="77" frameX="0" frameY="0" frameWidth="71" frameHeight="77"/>
+	<SubTexture name="icon sing left0000" x="77" y="89" width="68" height="84" frameX="0" frameY="-1" frameWidth="70" frameHeight="85"/>
+	<SubTexture name="icon sing left0001" x="77" y="89" width="68" height="84" frameX="0" frameY="-1" frameWidth="70" frameHeight="85"/>
+	<SubTexture name="icon sing left0002" x="153" y="89" width="69" height="85" frameX="-1" frameY="0" frameWidth="70" frameHeight="85"/>
+	<SubTexture name="icon sing left0003" x="153" y="89" width="69" height="85" frameX="-1" frameY="0" frameWidth="70" frameHeight="85"/>
+	<SubTexture name="icon sing right0000" x="0" y="182" width="91" height="93"/>
+	<SubTexture name="icon sing right0001" x="0" y="182" width="91" height="93"/>
+	<SubTexture name="icon sing right0002" x="99" y="182" width="66" height="85" frameX="0" frameY="-8" frameWidth="91" frameHeight="93"/>
+	<SubTexture name="icon sing right0003" x="99" y="182" width="66" height="85" frameX="0" frameY="-8" frameWidth="91" frameHeight="93"/>
+	<SubTexture name="icon sing up0000" x="173" y="182" width="75" height="117"/>
+	<SubTexture name="icon sing up0001" x="173" y="182" width="75" height="117"/>
+	<SubTexture name="icon sing up0002" x="0" y="307" width="74" height="100" frameX="0" frameY="-17" frameWidth="75" frameHeight="117"/>
+	<SubTexture name="icon sing up0003" x="0" y="307" width="74" height="100" frameX="0" frameY="-17" frameWidth="75" frameHeight="117"/>
+</TextureAtlas>

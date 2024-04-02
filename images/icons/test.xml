@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="test.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="0" y="0" width="125" height="148"/>
+	<SubTexture name="down0001" x="0" y="0" width="125" height="148"/>
+	<SubTexture name="down0002" x="0" y="0" width="125" height="148"/>
+	<SubTexture name="down0003" x="0" y="0" width="125" height="148"/>
+	<SubTexture name="idle0000" x="125" y="0" width="165" height="151"/>
+	<SubTexture name="left0000" x="290" y="0" width="118" height="146"/>
+	<SubTexture name="left0001" x="290" y="0" width="118" height="146"/>
+	<SubTexture name="left0002" x="408" y="0" width="110" height="138" frameX="-4" frameY="-5" frameWidth="118" frameHeight="146"/>
+	<SubTexture name="left0003" x="408" y="0" width="110" height="138" frameX="-4" frameY="-5" frameWidth="118" frameHeight="146"/>
+	<SubTexture name="righ0000" x="518" y="0" width="164" height="141" frameX="0" frameY="-18" frameWidth="164" frameHeight="159"/>
+	<SubTexture name="righ0001" x="518" y="0" width="164" height="141" frameX="0" frameY="-18" frameWidth="164" frameHeight="159"/>
+	<SubTexture name="righ0002" x="518" y="0" width="164" height="141" frameX="0" frameY="-18" frameWidth="164" frameHeight="159"/>
+	<SubTexture name="righ0003" x="682" y="0" width="140" height="159" frameX="-21" frameY="0" frameWidth="164" frameHeight="159"/>
+	<SubTexture name="up0000" x="822" y="0" width="114" height="217"/>
+	<SubTexture name="up0001" x="822" y="0" width="114" height="217"/>
+	<SubTexture name="up0002" x="822" y="0" width="114" height="217"/>
+	<SubTexture name="up0003" x="822" y="0" width="114" height="217"/>
+</TextureAtlas>

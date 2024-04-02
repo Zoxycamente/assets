@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="210" icon="hankus" y="180" isGF="false" scale="1.1" camy="110" color="#32363E" isPlayer="false" holdTime="6.1" sprite="banban">
+	<anim x="91" loop="true" y="-5" fps="24" anim="banban idle dance" name="idle"/>
+	<anim x="52" loop="false" y="147" fps="24" anim="banban sing up" name="singUP"/>
+	<anim x="376" loop="false" y="-288" fps="24" anim="banban sing right" name="singLEFT"/>
+	<anim x="46" loop="false" y="166" fps="24" anim="banban sing left" name="singRIGHT"/>
+	<anim x="202" loop="false" y="-95" fps="24" anim="banban sing down" name="singDOWN"/>
+</character>

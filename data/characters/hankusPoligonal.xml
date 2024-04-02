@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="210" icon="hankusPoligonal" y="200" isGF="false" scale="2" color="#FF1A13" isPlayer="false" holdTime="6.1" sprite="hankus_3D">
+	<anim x="76" loop="false" y="10" fps="24" anim="hankus 3D idle" name="idle"/>
+	<anim x="71" loop="false" y="26" fps="24" anim="hankus 3D up" name="singUP"/>
+	<anim x="101" loop="false" y="14" fps="24" anim="hankus 3D left" name="singLEFT"/>
+	<anim x="50" loop="false" y="12" fps="24" anim="hankus 3D right" name="singRIGHT"/>
+	<anim x="59" loop="false" y="10" fps="24" anim="hankus 3D down" name="singDOWN"/>
+</character>

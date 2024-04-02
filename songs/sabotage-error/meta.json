@@ -1,0 +1,16 @@
+{
+	"opponentModeAllowed": true,
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"beatsPerMesure": 4,
+	"bpm": 170,
+	"difficulties": [
+		"normal"
+	],
+	"needsVoices": true,
+	"parsedColor": -7060062,
+	"displayName": "Sabotage Error",
+	"icon": "Icon",
+	"name": "sabotage-error",
+	"color": "#9445A2"
+}
