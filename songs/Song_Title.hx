@@ -1,8 +1,10 @@
 var camTitle:HudCamera; //incase you want to do something
-var icon:HealthIcon;
-var coolSongText:FlxText;
-var coolBorderThing:FlxSprite;
-var coolBorderThing2:FlxSprite;
+public var icon:HealthIcon;
+var iconBf:HealthIcon;
+public var coolSongText:FlxText;
+var vsText:FlxText;
+public var coolBorderThing:FlxSprite;
+public var coolBorderThing2:FlxSprite;
 var JSON;
 var foundFile;
 function getTweenEaseByString(?ease:String = '') {
@@ -64,32 +66,49 @@ function postCreate(){
             icon = new HealthIcon(dad != null ? dad.getIcon() : "face", false);
         else
             icon = new HealthIcon(JSON.icon.toLowerCase(), false);
-        icon.x = -130;
-        icon.y = 333;
-        coolBorderThing = new FlxSprite(-500,285).makeGraphic(500,150,FlxColor.BLACK);
-        coolBorderThing2 = new FlxSprite(-50,285).makeGraphic(50,150,FlxColor.fromString(JSON.borderColor));
+        iconBf = new HealthIcon(boyfriend != null ? boyfriend.getIcon() : "face", false);
+        for (icons in [icon, iconBf]) {
+            icons.x = -130;
+            icons.y = 333;}
+        coolBorderThing = new FlxSprite(-500,285).makeGraphic(500,200,FlxColor.BLACK);
+        coolBorderThing2 = new FlxSprite(-50,285).makeGraphic(50,200,FlxColor.fromString(JSON.borderColor));
         coolSongText = new FlxText(-500,288,490,JSON.songName,JSON.songSize);
-        coolSongText.setFormat(Paths.font("vcr.ttf"),JSON.songSize,FlxColor.WHITE,"left","outline",FlxColor.BLACK);
+        coolSongText.setFormat(Paths.font("impact.ttf"),JSON.songSize,FlxColor.fromString(JSON.borderColor),"left","outline",FlxColor.BLACK);
         coolSongText.borderQuality = 2;
         coolSongText.borderSize = 2;
+        vsText = new FlxText(-500,400,490,"Vs.");
+        vsText.setFormat(Paths.font("impact.ttf"),JSON.songSize,FlxColor.WHITE,"left","outline",FlxColor.BLACK);
+        vsText.borderQuality = 2;
+        vsText.borderSize = 1;
         add(coolBorderThing);
         add(coolBorderThing2);
         add(coolSongText);
         add(icon);
+        add(iconBf);
+        add(vsText);
         coolBorderThing2.camera = camTitle;
         coolBorderThing.camera = camTitle;
         icon.camera = camTitle;
+        iconBf.camera = camTitle;
         coolSongText.camera = camTitle;
+        vsText.camera = camTitle;
+        iconBf.alpha = 0;
+        icon.alpha = 0;
+        iconBf.flipX = true;
     }
 }
 function onSongStart() {
     if(foundFile){
-        FlxTween.tween(icon, {x: -5}, JSON.duration, {ease: getTweenEaseByString(JSON.ease1)});
-        FlxTween.tween(coolSongText, {x: 0}, JSON.duration, {ease: getTweenEaseByString(JSON.ease1)});
+        FlxTween.tween(icon, {x: -5,alpha: 1}, JSON.duration, {ease: getTweenEaseByString(JSON.ease1)});
+        FlxTween.tween(iconBf, {x: 260,alpha: 1}, JSON.duration, {ease: getTweenEaseByString(JSON.ease1)});
+        FlxTween.tween(vsText, {x: 170}, JSON.duration, {ease: getTweenEaseByString(JSON.ease1)});
+        FlxTween.tween(coolSongText, {x: 10}, JSON.duration, {ease: getTweenEaseByString(JSON.ease1)});
         FlxTween.tween(coolBorderThing, {x: 0}, JSON.duration, {ease: getTweenEaseByString(JSON.ease1)});
         FlxTween.tween(coolBorderThing2, {x: 454}, JSON.duration, {ease: getTweenEaseByString(JSON.ease1)});
 
-        FlxTween.tween(icon, {x: -130}, JSON.duration, {ease: getTweenEaseByString(JSON.ease2), startDelay: JSON.delay});
+        FlxTween.tween(icon, {x: -130,alpha: 0}, JSON.duration, {ease: getTweenEaseByString(JSON.ease2), startDelay: JSON.delay});
+        FlxTween.tween(iconBf, {x: -130,alpha: 0}, JSON.duration, {ease: getTweenEaseByString(JSON.ease2), startDelay: JSON.delay});
+        FlxTween.tween(vsText, {x: -500}, JSON.duration, {ease: getTweenEaseByString(JSON.ease2), startDelay: JSON.delay});
         FlxTween.tween(coolSongText, {x: -500}, JSON.duration, {ease: getTweenEaseByString(JSON.ease2), startDelay: JSON.delay});
         FlxTween.tween(coolBorderThing, {x: -500}, JSON.duration, {ease: getTweenEaseByString(JSON.ease2), startDelay: JSON.delay});
         FlxTween.tween(coolBorderThing2, {x: -50}, JSON.duration, {ease: getTweenEaseByString(JSON.ease2), startDelay: JSON.delay});

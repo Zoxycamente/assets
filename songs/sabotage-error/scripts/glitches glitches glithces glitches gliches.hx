@@ -32,7 +32,7 @@ function postUpdate() {
 
     if (dad.curCharacter == "corrupted") if (!FlxG.save.data.shaderShit) for (h in cpuStrums.members) h.shader = glitch; 
     
-    for (i in [healthBorder2, healthBar, timeTxt, timeBarBG, missesTxt, accuracyTxt, scoreTxt, hankus]) i.shader = glitch;
+    for (i in [healthBorder2, healthBar, timeTxt, timeBarBG, missesTxt, accuracyTxt, scoreTxt, icon, coolSongText]) i.shader = glitch;
 
     if (!FlxG.save.data.shaderShit){
     if (health < 0.4) boyfriend.shader = iconP1.shader = glitch;

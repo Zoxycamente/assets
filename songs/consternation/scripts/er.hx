@@ -40,4 +40,4 @@ function onSongStart() {
 
 function onDadHit(hit) if (health > 1.2) hit.healthGain += 0.03; 
 
-function onPlayerMiss() health -= 123456789;
+//function onPlayerMiss() health -= 123456789;

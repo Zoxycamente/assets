@@ -1,0 +1,11 @@
+{
+    "borderColor": "#9445A2",
+    "songName": "Sabotage Error",
+    "songSize": 43,
+    "ease1": "circinout",
+    "ease2": "circinout",
+    "duration": 2,
+    "delay": 3,
+    "autoIcon": true,
+    "icon": "face"
+}
