@@ -77,7 +77,7 @@ function postCreate(){
         coolSongText.borderQuality = 2;
         coolSongText.borderSize = 2;
         vsText = new FlxText(-500,400,490,"Vs.");
-        vsText.setFormat(Paths.font("impact.ttf"),JSON.songSize,FlxColor.WHITE,"left","outline",FlxColor.BLACK);
+        vsText.setFormat(Paths.font("impact.ttf"),JSON.songSize,FlxColor.fromString(JSON.borderColor),"left","outline",FlxColor.BLACK);
         vsText.borderQuality = 2;
         vsText.borderSize = 1;
         add(coolBorderThing);
@@ -97,7 +97,7 @@ function postCreate(){
         iconBf.flipX = true;
     }
 }
-function onSongStart() {
+function songTitle() {
     if(foundFile){
         FlxTween.tween(icon, {x: -5,alpha: 1}, JSON.duration, {ease: getTweenEaseByString(JSON.ease1)});
         FlxTween.tween(iconBf, {x: 260,alpha: 1}, JSON.duration, {ease: getTweenEaseByString(JSON.ease1)});
@@ -114,3 +114,9 @@ function onSongStart() {
         FlxTween.tween(coolBorderThing2, {x: -50}, JSON.duration, {ease: getTweenEaseByString(JSON.ease2), startDelay: JSON.delay});
     }
 }
+
+function onSongStart() 
+    if (notSL) songTitle();
+    if (curSong == "sussy-legacy") notSL = false;
+
+function beatHit(curBeat:Int) if (curSong == "sussy-legacy") if (curBeat == 16) songTitle();

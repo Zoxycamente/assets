@@ -1,0 +1,11 @@
+{
+    "borderColor": "#DF0E08",
+    "songName": "Consternation",
+    "songSize": 43,
+    "ease1": "circinout",
+    "ease2": "circinout",
+    "duration": 2,
+    "delay": 3,
+    "autoIcon": true,
+    "icon": "face"
+}
