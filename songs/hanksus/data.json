@@ -1,0 +1,11 @@
+{
+    "borderColor": "#FFFFFF",
+    "songName": "HankSus Poggers",
+    "songSize": 43,
+    "ease1": "SineOut",
+    "ease2": "SineIn",
+    "duration": 2,
+    "delay": 3,
+    "autoIcon": true,
+    "icon": "face"
+}

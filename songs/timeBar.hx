@@ -28,16 +28,14 @@ function create() {
     if (curSong == "sussy-legacy") timeBar.createFilledBar(0xFF5E5E5E, 0xFF187A00);
     timeBar.numDivisions = 800;
     timeBar.value = Conductor.songPosition / Conductor.songDuration;
+    for (times in [timeBar, timeBarBG, timeTxt]) add(times);
 
     timeTxt.x = 830;
     timeTxt.y = 27;
     timeBar.x = 805;
     timeBarBG.x = 800;
 
-    for (times in [timeBar, timeBarBG, timeTxt]) {
-        times.cameras = [camHUD];
-        add(times);
-    }
+    for (times in [timeBar, timeBarBG, timeTxt]) times.cameras = [camHUD];
 }
 	
 function update(elapsed:Float) {

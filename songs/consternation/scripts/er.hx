@@ -2,22 +2,8 @@ import flixel.text.FlxTextBorderStyle;
 
 var warningTxt:FlxText;
 var iconWarning:FlxSprite;
-/*var angel = new CustomShader("angel");
-
-function postCreate() {
-    angel.data.pixel.value = [0.1, 0.1];
-    angel.data.stronk.value = [1, 1];
-    camGame.addShader(angel);
-    camHUD.addShader(angel);
-}*/
 
 function update(elapsed:Float) {
-    /*if (angel != null) {
-        angel.data.stronk.value[0] = FlxMath.lerp(angel.data.stronk.value[0], 0, FlxMath.bound(elapsed * 7, 0, 1));
-        angel.data.pixel.value[0] = FlxMath.lerp(angel.data.pixel.value[0], 1, FlxMath.bound(elapsed * 9, 0, 1));
-        angel.data.iTime.value = [Conductor.songPosition / 1000];
-    }*/
-    
     window.title = "Friday Night Funkin': Vs. Hankus | Consternation | Why all that consternation?"; 
     accuracyTxt.x = 200;
     missesTxt.visible = false; 
@@ -30,7 +16,7 @@ function create() {
     iconWarning.cameras = [camHUD];
     add(iconWarning);
 
-    warningTxt = new FlxText(1190, 500, FlxG.width, "DON'T MISS.");
+    warningTxt = new FlxText(2000, 500, FlxG.width, "DON'T MISS.");
     warningTxt.setFormat(Paths.font("impact.ttf"), 50, FlxColor.YELLOW, "center", FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
     warningTxt.borderSize = 2.3;
     warningTxt.antialiasing = true;
@@ -41,8 +27,7 @@ function create() {
 }
 
 function onSongStart() {
-    for (h in [warningTxt, iconWarning]) {
-        FlxTween.tween(h, {alpha: 1, y: 300}, 1, {ease: FlxEase.cubeInOut});
+    for (h in [warningTxt, iconWarning]) FlxTween.tween(h, {alpha: 1, y: 300}, 1, {ease: FlxEase.cubeInOut});
 
     new FlxTimer().start(3, function(timer:FlxTimer) {
         for (i in [warningTxt, iconWarning]) {
@@ -51,9 +36,7 @@ function onSongStart() {
             }});
         }
     });
-}}
-
-//function beatHit() angel.data.stronk.value[0] = 0.1;
+}
 
 function onDadHit(hit) if (health > 1.2) hit.healthGain += 0.03; 
 

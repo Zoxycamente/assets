@@ -1,0 +1,9 @@
+{
+	"params": [
+		{
+			"name": "Activade?",
+			"type": "Bool",
+			"defaultValue": true
+		}		
+	]
+}

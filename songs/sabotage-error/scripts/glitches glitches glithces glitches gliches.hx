@@ -35,20 +35,11 @@ function postUpdate() {
     for (i in [healthBorder2, healthBar, timeTxt, timeBarBG, missesTxt, accuracyTxt, scoreTxt, hankus]) i.shader = glitch;
 
     if (!FlxG.save.data.shaderShit){
-    if (health < 0.4) {
-        boyfriend.shader = glitch;
-        iconP1.shader = glitch;
-      } else {
-        boyfriend.shader = null;
-        iconP1.shader = null;
-    }
-
-    if (health > 1.6) {
-        dad.shader = glitch;
-        corruptedIcon.shader = glitch;
-      } else {
-        dad.shader = null;
-        corruptedIcon.shader = null; }
+    if (health < 0.4) boyfriend.shader = iconP1.shader = glitch;
+    else boyfriend.shader = iconP1.shader = null;
+    
+    if (health > 1.6) dad.shader = corruptedIcon.shader = glitch;
+    else dad.shader = corruptedIcon.shader = null;
     }
 }
 

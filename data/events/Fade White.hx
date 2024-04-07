@@ -15,7 +15,8 @@ function fadeWhiteFlash()	{
 
 function onEvent(e) {
    if (e.event.name == "Fade White") {
-        activade = e.event.params[0];
+        if (e.event.params[0] == true) activade = true; 
+        if (e.event.params[0] == false) activade = false;
     }
 }
 
