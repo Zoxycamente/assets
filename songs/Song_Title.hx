@@ -117,6 +117,9 @@ function songTitle() {
 
 function onSongStart() 
     if (notSL) songTitle();
-    if (curSong == "sussy-legacy") notSL = false;
+    if (curSong == "sussy-legacy" || curSong == "sabotage-error") notSL = false;
 
-function beatHit(curBeat:Int) if (curSong == "sussy-legacy") if (curBeat == 16) songTitle();
+function beatHit(curBeat:Int) {
+    if (curSong == "sussy-legacy") if (curBeat == 16) songTitle();
+    if (curSong == "sabotage-error") if (curBeat == 32) songTitle();
+}

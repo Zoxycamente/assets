@@ -1,6 +1,6 @@
 import flixel.text.FlxTextBorderStyle;
 
-var hudTxt:FlxText;
+public var hudTxt:FlxText;
 
 var ratingFC:String = "FC";
 var ratingStuff:Array<Dynamic> = [

@@ -1,4 +1,4 @@
-if (!FlxG.save.data.camMove && curSong == "sussy-legacy") disableScript();
+if (!FlxG.save.data.camMove || curSong == "sussy-legacy") disableScript();
 
 public var cameraMovementStrength = 20;
 

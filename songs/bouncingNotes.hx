@@ -5,9 +5,7 @@ function onPlayerHit(e) {
     if (e.isSustainNote) return;
         playerStrums.members[e.direction].y = 50 + -22;
         FlxTween.tween(playerStrums.members[e.direction], {y: 50}, 0.125, {ease: FlxEase.sineInOut});
-    } if (boyfriend.curCharacter == "bf-shading") { 
-        notSL = false; 
-    }
+    } if (boyfriend.curCharacter == "bf-shading")  notSL = false; 
 }
 
 function onDadHit(e) {
@@ -15,7 +13,5 @@ function onDadHit(e) {
     if (e.isSustainNote) return;
         cpuStrums.members[e.direction].y = 50 + -22;
         FlxTween.tween(cpuStrums.members[e.direction], {y: 50}, 0.125, {ease: FlxEase.sineInOut});
-    } if (dad.curCharacter == "legacy") { 
-        notSL = false; 
-    }
+    } if (dad.curCharacter == "legacy") notSL = false; 
 }
